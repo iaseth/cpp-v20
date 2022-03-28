@@ -5,3 +5,4 @@ cmake_install.cmake
 
 Makefile
 cppv20.out
+libcppv20.a
