@@ -11,12 +11,13 @@ League::League (const njson& jo) {
 		grounds.push_back(new Ground{this, gj});
 	}
 
-	for (const auto& player : jo["players"]) {
-		// std::cout << "Player: " << player["fn"] << '\n';
+	for (const auto& pj : jo["players"]) {
+		players.push_back(new Player{this, pj});
 	}
 }
 
 League::~League () {
 	for (Team *team : teams) delete team;
 	for (Ground *ground : grounds) delete ground;
+	for (Player *player : players) delete player;
 }
