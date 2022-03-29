@@ -4,8 +4,7 @@ using namespace v20;
 
 League::League (const njson& jo) {
 	for (const auto& tj : jo["teams"]) {
-		cout << "Team: " << tj["fn"] << '\n';
-		teams.push_back(new Team{});
+		teams.push_back(new Team{this, tj});
 	}
 
 	for (const auto& ground : jo["grounds"]) {

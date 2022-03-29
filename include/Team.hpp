@@ -6,14 +6,18 @@
 
 
 namespace v20 {
+	class League;
 	class Team {
 		public:
 			static int count;
-			Team ();
+			Team (League *league, const njson& jo);
 			~Team ();
 
+		public:
+			League *league;
+
 		private:
-			int counter;
+			int counter, id;
 			string fn, sn, abb;
 	};
 }
