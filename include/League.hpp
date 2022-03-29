@@ -17,6 +17,7 @@ namespace v20 {
 
 		private:
 			vector<Team*> teams;
+			vector<Ground*> grounds;
 	};
 }
 

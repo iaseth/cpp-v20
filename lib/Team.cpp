@@ -16,5 +16,5 @@ Team::Team (League *league, const njson& jo) {
 }
 
 Team::~Team () {
-	cout << "Deleted Team #" << counter << '\n';
+	// cout << "Deleted Team #" << counter << '\n';
 }
