@@ -4,6 +4,8 @@
 #include <iostream>
 #include <vector>
 
+#include "Baseclass.hpp"
+
 using std::cout;
 using std::string;
 using std::vector;

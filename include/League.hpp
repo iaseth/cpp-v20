@@ -10,7 +10,7 @@
 
 
 namespace v20 {
-	class League {
+	class League : Baseclass {
 		public:
 			League (const njson& jo);
 			~League ();

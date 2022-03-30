@@ -7,7 +7,7 @@
 
 namespace v20 {
 	class League;
-	class Team {
+	class Team : Baseclass {
 		public:
 			static int count;
 			Team (League *league, const njson& jo);
