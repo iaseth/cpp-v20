@@ -11,10 +11,16 @@ Player::Player (League *league, const njson& jo) {
 	fn = jo["fn"];
 	sn = jo["sn"];
 	path = jo["path"];
-	cout << "Created Player #" << counter << '\n';
-	cout << fn << " (" << path << ")\n";
 }
 
 Player::~Player () {
 	// cout << "Deleted Player #" << counter << '\n';
+}
+
+void Player::logConstruction () {
+	cout << "Created Player #" << counter << ": " << fn << " (" << path << ")\n";
+}
+
+void Player::logDestruction () {
+	cout << "Deleted Player #" << counter << '\n';
 }

@@ -21,3 +21,7 @@ League::~League () {
 	for (Ground *ground : grounds) delete ground;
 	for (Player *player : players) delete player;
 }
+
+void League::doStuff () {
+	cout << "doStuff()\n";
+}

@@ -15,6 +15,8 @@ namespace v20 {
 			League (const njson& jo);
 			~League ();
 
+			void doStuff ();
+
 		private:
 			vector<Team*> teams;
 			vector<Ground*> grounds;

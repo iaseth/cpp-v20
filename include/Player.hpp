@@ -13,6 +13,9 @@ namespace v20 {
 			Player (League *league, const njson& jo);
 			~Player ();
 
+			void logConstruction();
+			void logDestruction();
+
 		public:
 			League *league;
 
